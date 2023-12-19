@@ -63,6 +63,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@faker-js/faker@npm:^8.3.1":
+  version: 8.3.1
+  resolution: "@faker-js/faker@npm:8.3.1"
+  checksum: ed50c27a5674a8c755574ccc0c79c29fa70cd17d524b701269f584d2f78720c690da219f6111b0e743a4f6570fb08685d826b2d9e80ca9c1484b8c26047864c6
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.13":
   version: 0.11.13
   resolution: "@humanwhocodes/config-array@npm:0.11.13"
@@ -189,6 +196,34 @@ __metadata:
     picocolors: "npm:^1.0.0"
     tslib: "npm:^2.6.0"
   checksum: 7c3e68f6405a1d4c51f418d8d580e71d7bade2683d5db07e8413d8e57f7e389047eda44a2341f77a1b3085895fca7676a9d45e8812a58312524f8c4c65d501be
+  languageName: node
+  linkType: hard
+
+"@prisma/client@npm:4.7.1":
+  version: 4.7.1
+  resolution: "@prisma/client@npm:4.7.1"
+  dependencies:
+    "@prisma/engines-version": "npm:4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 48d76d16eeec0f0e897342b1e69337261e9e3a9845f68bf0f1ad5e96155427b661bd16f65bf2054f097dfa6c8e00d676dcdbe3337194de8eb1791fbb53be08b3
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c":
+  version: 4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c
+  resolution: "@prisma/engines-version@npm:4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c"
+  checksum: a5a15892d23409714afd81084028fce1b391661b4021fc4c3b8dd2a7cfadadb83323329f7fa9a1a40c11964baad9e6f8367fc909b627dd9885d4161d45a074ef
+  languageName: node
+  linkType: hard
+
+"@prisma/engines@npm:4.7.1":
+  version: 4.7.1
+  resolution: "@prisma/engines@npm:4.7.1"
+  checksum: cc86d4f736b624cc334798818e925af87c6998d39a41340a0bee85ac955cd71cb57a920f736737721f3a7423521a9969f9bf0c6c022a7cdb5695772ceeefb8a1
   languageName: node
   linkType: hard
 
@@ -2897,6 +2932,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prisma@npm:4.7.1":
+  version: 4.7.1
+  resolution: "prisma@npm:4.7.1"
+  dependencies:
+    "@prisma/engines": "npm:4.7.1"
+  bin:
+    prisma: build/index.js
+    prisma2: build/index.js
+  checksum: a425aeeb42f16e75f91dc19b09558315d3e0c22daf5ed41e265b0942afdd7a2287fde99fa76be984cf298b8ba1d8798587e13035bf7a0d2d3ec1472b1fce7b97
+  languageName: node
+  linkType: hard
+
 "promise-retry@npm:^2.0.1":
   version: 2.0.1
   resolution: "promise-retry@npm:2.0.1"
@@ -3091,6 +3138,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "search-location-system@workspace:."
   dependencies:
+    "@faker-js/faker": "npm:^8.3.1"
+    "@prisma/client": "npm:4.7.1"
     "@types/cors": "npm:^2.8.15"
     "@types/eslint": "npm:^8"
     "@types/express": "npm:^4.17.20"
@@ -3109,6 +3158,7 @@ __metadata:
     mongoose: "npm:^7.6.3"
     nodemon: "npm:^3.0.1"
     prettier: "npm:^3.0.3"
+    prisma: "npm:4.7.1"
     ts-node-dev: "npm:^2.0.0"
     typescript: "npm:^5.2.2"
   languageName: unknown
