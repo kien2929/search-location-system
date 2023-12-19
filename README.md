@@ -36,7 +36,9 @@ yarn prisma:seed
 yarn start
 ```
 
-## Run tests
+## Run tests (stop project before run)
 ```sh
 yarn test:unit
 ```
+
+## [API Document](document.md)
