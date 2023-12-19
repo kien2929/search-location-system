@@ -12,8 +12,8 @@ const filterByNameAndTypeValidate = [
   query('name').isString().notEmpty(),
   query('type')
     .isInt()
-    .custom((value) => isValidEnum(value, StoreType))
     .toInt()
+    .custom((value) => isValidEnum(value, StoreType))
 ]
 const getByCoordinatesValidate = [
   query('latitude').isFloat(),
@@ -24,8 +24,8 @@ const postStoreValidate = [
   body('name').isString().notEmpty(),
   body('type')
     .isInt()
-    .custom((value) => isValidEnum(value, StoreType))
-    .toInt(),
+    .toInt()
+    .custom((value) => isValidEnum(value, StoreType)),
   body('latitude').isFloat(),
   body('longitude').isFloat()
 ]

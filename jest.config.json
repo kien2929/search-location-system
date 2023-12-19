@@ -1,0 +1,14 @@
+{
+  "preset": "ts-jest",
+  "collectCoverage": false,
+  "collectCoverageFrom": ["**/src/**/*.ts"],
+  "testMatch": ["**/tests/**/*.test.ts", "!**/tests/utils.ts"],
+  "testEnvironment": "node",
+  "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/dist/"],
+  "transform": {
+    "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+  },
+  "transformIgnorePatterns": [
+    "node_modules/(?!variables/.*)"
+  ]
+}

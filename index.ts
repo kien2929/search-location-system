@@ -16,6 +16,8 @@ app.use(router)
 
 app.use(errorHandler)
 
-app.listen(port, () => {
-  console.log(`Server is Fire at http://localhost:${port}`)
+const server = app.listen(port, () => {
+  console.log(`server is started at  http://localhost:${port}`)
 })
+
+export default server

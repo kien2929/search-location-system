@@ -22,8 +22,8 @@ export const postFavoriteStores = async (req: Request, res: Response) => {
 }
 
 export const deleteFavoriteStores = async (req: Request, res: Response) => {
-  const { favoriteStoreId } = req.params
-  await deleteFavoriteStoresByUserId(Number(favoriteStoreId))
+  const { userId, storeId } = req.params
+  await deleteFavoriteStoresByUserId(Number(userId), Number(storeId))
 
   return res.send({ message: 'OK' })
 }

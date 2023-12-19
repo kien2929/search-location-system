@@ -20,10 +20,13 @@ export const addFavoriteStores = async (userId: number, storeId: number) => {
   })
 }
 
-export const deleteFavoriteStoresByUserId = async (favoriteStoreId: number) => {
+export const deleteFavoriteStoresByUserId = async (userId: number, storeId: number) => {
   return prisma.favoriteStore.delete({
     where: {
-      id: favoriteStoreId
+      idx_user_id_store_id: {
+        userId,
+        storeId
+      }
     }
   })
 }
