@@ -1,6 +1,6 @@
 import express, { Application } from 'express'
 import dotenv from 'dotenv'
-import { errorHandler } from './src/middleware/error-handler.middleware'
+import { errorHandler } from './src/middlewares/error-handler.middleware'
 import { router } from './src/routes'
 import 'express-async-errors'
 //For env File
